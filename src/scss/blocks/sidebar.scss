@@ -15,4 +15,8 @@
 	@include mMax {
 		display: none;
 	}
+
+	@media (max-height: 500px) {
+		min-height: 120vh;
+	}
 }
