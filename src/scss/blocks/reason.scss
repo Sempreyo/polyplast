@@ -1,0 +1,100 @@
+.reason {
+	padding: 52px 0 109px;
+
+	@include tMax {
+		padding: 52px 0;
+	}
+
+	@include mMax {
+		padding: 0;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@include tMax {
+			flex-direction: column;
+		}
+
+		@include mMax {
+			position: unset;
+		}
+	}
+
+	&__image {
+		max-width: 553px;
+		width: 100%;
+		height: 533px;
+		position: absolute;
+		top: 0;
+		right: -150px;
+
+		@media (max-width: 1500px) {
+			max-width: 100%;
+			width: 50%;
+			right: 0;
+			position: relative;
+		}
+
+		@include tMax {
+			max-width: 500px;
+			height: 300px;
+			width: 100%;
+		}
+
+		@include mMax {
+			max-width: 100%;
+			height: 105%;
+			position: absolute;
+			left: 0;
+		}
+
+		&:before {
+			content: '';
+			display: none;
+			width: 63%;
+			height: 67%;
+			background-color: rgba($mainColor, 0.8);
+			position: absolute;
+			bottom: -60px;
+			left: -55px;
+
+			@include mMax {
+				display: block;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 2;
+				background-color: rgba(55, 55, 65, 0.95);
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&__content {
+		@include tMax {
+			width: 100%;
+			padding-top: 0;
+			margin-bottom: 20px;
+		}
+
+		@include mMax {
+			position: relative;
+			z-index: 3;
+			padding-top: 34px;
+			margin-bottom: 0;
+		}
+	}
+}

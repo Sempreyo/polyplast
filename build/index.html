@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header__container">
+        <div class="header__left"><a class="header__logo" href=""><img src="img/logo.png" alt=""></a>
+          <div class="header__burger"><span></span></div>
+          <div class="menu">
+            <ul class="menu__list">
+              <li><a href="#">Услуги и цены</a>
+                <div class="dropdown-menu">
+                  <div class="container dropdown-menu__container">
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Реклама</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Светодиодная продукция</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__right"><a class="header__phone" href="tel:88005553607">8 800 555 36 07</a>
+          <ul class="socials socials--row header__socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="first-screen" style="background-image: url(&quot;img/first-screen.jpg&quot;)">
+        <div class="sidebar">
+          <ul class="socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="container first-screen__container">
+          <div class="first-screen__content">
+            <div class="first-screen__title">БЫСТРО ДЕЛАЕМ <br> РЕКЛАМУ И СУВЕНИРЫ</div>
+            <div class="first-screen__subtitle">В Иркутске и с доставкой <br> в другие города</div>
+            <form class="form js-form-validate" action="php/mail.php" method="post">
+              <label class="form__field field">
+                <input type="text" name="phone" placeholder="Телефон" required><span class="field__hint">Телефон</span>
+                <div class="field-error"></div>
+              </label>
+              <button class="button form__submit" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container advantages__container">
+          <div class="advantages__row">
+            <div class="advantages__item advantages__item--purple">
+              <svg width="52" height="55">
+                <use xlink:href="svg/sprite.svg#advantage-1"></use>
+              </svg>
+              <div class="advantages__item-text">
+                <p>1089+</p>
+                <p>Выполненных заказов</p>
+              </div>
+            </div>
+            <div class="advantages__item advantages__item--orange">
+              <svg width="52" height="55">
+                <use xlink:href="svg/sprite.svg#advantage-2"></use>
+              </svg>
+              <div class="advantages__item-text">
+                <p>1089+</p>
+                <p>Выполненных заказов</p>
+              </div>
+            </div>
+            <div class="advantages__item advantages__item--blue">
+              <svg width="41" height="56">
+                <use xlink:href="svg/sprite.svg#advantage-3"></use>
+              </svg>
+              <div class="advantages__item-text">
+                <p>1089+</p>
+                <p>Выполненных заказов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reason">
+        <div class="container reason__container">
+          <div class="reason__row">
+            <div class="content content--light reason__content">
+              <div class="content__title">Почему мы?</div>
+              <div class="content__subtitle">Почему мы?</div>
+              <div class="content__text">
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              </div>
+            </div>
+            <div class="reason__image"><img src="img/reason.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__row">
+            <div class="contacts__map">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CCU4YHDfdC" allowfullscreen="true" style="position:relative;" frameborder="1"></iframe>
+            </div>
+            <div class="content contacts__content">
+              <div class="content__title">Контакты</div>
+              <div class="content__subtitle">Почему мы?</div>
+              <div class="content__text">
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+                <p>
+                  Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__text">Есть идея? Помжем с <br> воплащением</div>
+          <form class="form form--dark feedback__form js-form-validate" action="php/mail.php" method="post">
+            <label class="form__field field">
+              <input type="text" name="phone" placeholder="Телефон" required><span class="field__hint">Телефон</span>
+              <div class="field-error"></div>
+            </label>
+            <button class="button form__submit feedback__submit" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="container footer__container"><a class="footer__logo" href=""><img src="img/logo.png" alt=""></a>
+          <ul class="footer__menu">
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="socials socials--row footer__socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+          </ul><a class="footer__phone" href="tel:88005553607">8 800 555 36 07</a>
+        </div>
+      </div>
+    </main>
+    <div class="popup-thanks" id="popup-thanks" style="display: none">
+      <div class="popup-thanks__title">Ваша заявка получена!</div>
+      <div class="popup-thanks__text">Наш менеджер свяжется с Вами <br> в ближайшее время.</div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

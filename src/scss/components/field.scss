@@ -1,0 +1,69 @@
+.field {
+	$self: &;
+
+	position: relative;
+	display: block;
+	width: 100%;
+	cursor: text;
+
+	&__hint {
+		position: absolute;
+		top: -2.3em;
+		display: block;
+		transition: 0.3s;
+		font-size: 14px;
+		color: $white;
+
+		@include mMax {
+			font-family: $secondFont;
+		}
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 20px 0;
+		border: none;
+		border-bottom: 1px solid $white;
+		background-color: transparent;
+		font-family: $mainFont;
+		font-size: 17px;
+		color: $white;
+		box-sizing: border-box;
+
+		@include mMax {
+			padding: 13px 0;
+			font-size: 13px;
+		}
+
+		&::placeholder {
+			color: transparent;
+		}
+
+		&:placeholder-shown ~ #{$self}__hint {
+			font-size: 17px;
+			font-weight: 300;
+			top: 50%;
+			transform: translateY(-50%);
+			color: $white;
+
+			@include mMax {
+				font-size: 13px;
+			}
+		}
+
+		&:focus {
+			~ #{$self}__hint {
+				position: absolute;
+				top: -2.3em;
+				display: block;
+				font-size: 14px;
+
+				@include mMax {
+					font-size: 12px;
+					top: -1.6em;
+				}
+			}
+		}
+	}
+}

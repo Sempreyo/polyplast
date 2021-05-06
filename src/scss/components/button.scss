@@ -1,0 +1,20 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 48px;
+	background-color: $light-blue;
+	font-family: $mainFont;
+	font-size: 15px;
+	line-height: 21px;
+	color: $white;
+	transition: background-color 0.3s ease;
+
+	@include hover {
+		background-color: rgba($light-blue, 0.8);
+	}
+
+	@include mMax {
+		padding: 16px 48px;
+	}
+}

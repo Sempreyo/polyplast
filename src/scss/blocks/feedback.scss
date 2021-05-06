@@ -1,0 +1,45 @@
+.feedback {
+	padding: 140px 0 104px;
+
+	@include tMax {
+		padding: 25px 0 50px;
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 59px;
+
+		@include mMax {
+			font-size: 15px;
+			line-height: 23px;
+			margin-bottom: 17px;
+		}
+
+		br {
+			display: none;
+
+			@include mMax {
+				display: block;
+			}
+		}
+	}
+
+	&__form {
+		max-width: 680px;
+		width: 100%;
+
+		@include mMax {
+			max-width: 100%;
+		}
+	}
+
+	&__submit {
+		max-width: 280px;
+
+		@include mMax {
+			max-width: 100%;
+		}
+	}
+}

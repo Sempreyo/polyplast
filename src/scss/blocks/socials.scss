@@ -1,0 +1,45 @@
+.socials {
+	$self: &;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 0;
+
+	&__item {
+		height: 20px;
+
+		+ .socials__item {
+			margin-top: 30px;
+		}
+
+		a {
+			@include hover {
+				svg {
+					opacity: 0.5;
+				}
+			}
+
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: $gray-f9;
+				@include transition(opacity);
+			}
+		}
+	}
+
+	&--row {
+		flex-direction: row;
+
+		#{$self} {
+			&__item {
+				+ .socials__item {
+					margin-top: 0;
+					margin-left: 28px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+mixin dropdown-menu(items)
+	.dropdown-menu
+		.container.dropdown-menu__container
+			each group in items
+				ul.dropdown-menu__group
+					each link in group
+						li
+							a(href=link.href)= link.text

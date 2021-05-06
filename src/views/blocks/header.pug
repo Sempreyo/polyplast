@@ -1,0 +1,16 @@
+.header
+	.container.header__container
+		.header__left
+			a.header__logo(href='')
+				img(src='img/logo.png', alt='')
+			.header__burger
+				span
+			include menu.pug
+		.header__right
+			a.header__phone(href='tel:88005553607') 8 800 555 36 07
+			+socials([
+				{href: "#", icon: "socials--viber"},
+				{href: "#", icon: "socials--insta"},
+				{href: "#", icon: "socials--wa"},
+				{href: "#", icon: "socials--email"}
+			], 'socials--row header__socials')

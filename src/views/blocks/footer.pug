@@ -1,0 +1,16 @@
+.footer
+	.container.footer__container
+		a.footer__logo(href='')
+			img(src='img/logo.png', alt='')
+		ul.footer__menu
+			li
+				a(href='#') Услуги и цены
+			li
+				a(href='#') Контакты
+		+socials([
+			{href: "#", icon: "socials--insta"},
+			{href: "#", icon: "socials--wa"},
+			{href: "#", icon: "socials--email"},
+			{href: "#", icon: "socials--viber"}
+		], 'socials--row footer__socials')
+		a.footer__phone(href='tel:88005553607') 8 800 555 36 07

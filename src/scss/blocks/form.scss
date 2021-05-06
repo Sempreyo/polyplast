@@ -1,0 +1,37 @@
+.form {
+	display: flex;
+
+	@include mMax {
+		flex-direction: column;
+	}
+
+	&__submit {
+		max-width: 220px;
+		width: 100%;
+		margin-left: 10px;
+
+		@include mMax {
+			max-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+		}
+	}
+
+	&--dark {
+		.field {
+			&__hint {
+				color: $mainColor;
+			}
+
+			input,
+			textarea {
+				border-bottom-color: $mainColor;
+				color: $mainColor;
+
+				&:placeholder-shown ~ .field__hint {
+					color: $mainColor;
+				}
+			}
+		}
+	}
+}

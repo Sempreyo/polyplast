@@ -1,0 +1,51 @@
+.dropdown-menu {
+	width: 100%;
+	padding: 30px 0 55px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: $mainColor;
+	opacity: 0;
+	pointer-events: none;
+	@include transition(opacity);
+
+	&__container {
+		display: flex;
+		padding: 0;
+	}
+
+	&__group {
+		+ .dropdown-menu__group {
+			margin-left: 128px;
+		}
+
+		li {
+			font-size: 13px;
+			line-height: 18px;
+			text-transform: uppercase;
+			margin-bottom: 8px;
+
+			@include hover {
+				> a {
+					opacity: 0.5;
+				}
+			}
+
+			&:not(:first-child) {
+				font-family: $secondFont;
+				font-size: 14px;
+				line-height: 21px;
+				text-transform: none;
+				opacity: 0.8;
+
+				+ li {
+					margin-top: 9px;
+				}
+			}
+
+			a {
+				@include transition(opacity);
+			}
+		}
+	}
+}

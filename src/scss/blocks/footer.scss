@@ -1,0 +1,116 @@
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: $mainColor;
+
+	@include tMax {
+		height: auto;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+		position: unset;
+
+		@include tMax {
+			flex-direction: column;
+			justify-content: center;
+			padding: 40px 0 60px;
+		}
+	}
+
+	&__logo {
+		width: 134px;
+		height: 60px;
+		margin-right: 15px;
+
+		@include tMax {
+			width: 140px;
+			height: 62px;
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		margin-right: 80px;
+
+		@include tMax {
+			flex-direction: column;
+			margin-right: 0;
+			margin-bottom: 60px;
+		}
+
+		li {
+			@include hover {
+				a {
+					opacity: 0.5;
+				}
+			}
+
+			+ li {
+				margin-left: 38px;
+
+				@include tMax {
+					margin-left: 0;
+					margin-top: 17px;
+				}
+			}
+
+			a {
+				font-size: 13px;
+				line-height: 18px;
+				text-transform: uppercase;
+				color: $white;
+				@include transition(opacity);
+			}
+		}
+	}
+
+	&__socials {
+		@include tMax {
+			margin-bottom: 63px;
+		}
+
+		.socials__item {
+			+ .socials__item {
+				@include tMax {
+					margin-left: 32px;
+				}
+			}
+
+			a svg {
+				@include tMax {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+	}
+
+	&__phone {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: bold;
+		color: $white;
+		margin-left: 12px;
+		@include transition(opacity);
+
+		@include hover {
+			opacity: 0.5;
+		}
+
+		@include tMax {
+			margin-left: 0;
+		}
+	}
+}

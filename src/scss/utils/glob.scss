@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	font-family: $mainFont;
+	font-size: 15px;
+	line-height: 150%;
+	color: $mainColor;
+	background-color: $white;
+}
+
+* {
+	outline: none !important;
+}
+
+a {
+	color: $mainColor;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+	border: 0;
+	outline: 0;
+
+	&::-moz-focus-inner,
+	&::-moz-focus-outer {
+		border: 0;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+section {
+	background-color: $white;
+	margin-top: -1px;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	@include tMax {
+		padding: 0 10px;
+	}
+}
+
+.body-scroll-lock {
+	overflow: hidden;
+}
+
+.field-error {
+	display: none;
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 14px;
+	color: $orange;
+}

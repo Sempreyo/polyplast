@@ -1,0 +1,95 @@
+.content {
+	$self: &;
+
+	width: 50%;
+	padding-top: 41px;
+
+	@include mMax {
+		width: 100%;
+		padding-top: 36px;
+	}
+
+	&__title {
+		font-size: 43px;
+		line-height: 60px;
+		font-weight: 500;
+		letter-spacing: 0.03em;
+		margin-bottom: 13px;
+
+		@include mMax {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		line-height: 33px;
+		font-weight: 500;
+		color: $orange;
+		letter-spacing: 0.03em;
+		margin-bottom: 21px;
+
+		@include mMax {
+			font-size: 15px;
+			line-height: 23px;
+			margin-bottom: 16px;
+		}
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-size: 15px;
+		line-height: 23px;
+
+		@include mMax {
+			font-size: 13px;
+			line-height: 20px;
+		}
+
+		p {
+			@include mMax {
+				border-bottom: 2px solid $mainColor;
+				margin-bottom: 13px;
+				padding-bottom: 19px;
+			}
+
+			+ p {
+				margin-top: 30px;
+
+				@include mMax {
+					margin-top: 0;
+				}
+			}
+		}
+
+		br {
+			@include mMax {
+				display: none;
+			}
+		}
+	}
+
+	&--light {
+		#{$self} {
+			&__title {
+				@include mMax {
+					color: $white;
+				}
+			}
+
+			&__text {
+				@include mMax {
+					color: $white;
+				}
+
+				p {
+					@include mMax {
+						border-bottom-color: $orange;
+					}
+				}
+			}
+		}
+	}
+}

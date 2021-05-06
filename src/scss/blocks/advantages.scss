@@ -1,0 +1,69 @@
+.advantages {
+	@include tMax {
+		display: none;
+	}
+
+	&__container {
+		max-width: 1575px;
+		padding: 95px 15px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&--purple {
+			svg {
+				fill: $purple;
+			}
+
+			.advantages__item-text {
+				color: $purple;
+			}
+		}
+
+		&--orange {
+			svg {
+				fill: $orange;
+			}
+
+			.advantages__item-text {
+				color: $orange;
+			}
+		}
+
+		&--blue {
+			svg {
+				fill: $light-blue;
+			}
+
+			.advantages__item-text {
+				color: $light-blue;
+			}
+		}
+	}
+
+	&__item-text {
+		margin-left: 37px;
+
+		p {
+			font-weight: 500;
+			letter-spacing: 0.03em;
+
+			&:first-child {
+				font-size: 43px;
+				line-height: 55px;
+			}
+
+			&:last-child {
+				font-size: 24px;
+				line-height: 33px;
+			}
+		}
+	}
+}

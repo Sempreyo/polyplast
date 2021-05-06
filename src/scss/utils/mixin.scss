@@ -1,0 +1,26 @@
+/* Media queries */
+@mixin mMax {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin tMax {
+	@media (max-width: 1210px) {
+		@content;
+	}
+}
+
+/* Hover */
+@mixin hover {
+	@media (min-width: 1024px) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+/* Transition */
+@mixin transition($prop) {
+	transition: $prop 0.3s ease;
+}

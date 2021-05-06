@@ -1,0 +1,85 @@
+.first-screen {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	padding: 100px 0 100px 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	@include tMax {
+		padding: 100px 0 40px 80px;
+	}
+
+	@include mMax {
+		padding: 108px 0 25px;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(55, 55, 65, 0.7);
+	}
+
+	&__content {
+		max-width: 617px;
+		width: 100%;
+		color: $white;
+		position: relative;
+		z-index: 1;
+
+		@include mMax {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		font-size: 43px;
+		line-height: 60px;
+		font-weight: 500;
+		margin-bottom: 50px;
+		letter-spacing: 0.03em;
+
+		@include mMax {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 15px;
+		}
+
+		br {
+			display: none;
+
+			@include mMax {
+				display: block;
+			}
+		}
+	}
+
+	&__subtitle {
+		font-family: $secondFont;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 60px;
+
+		@include mMax {
+			font-size: 15px;
+			line-height: 23px;
+			margin-bottom: 27px;
+		}
+
+		br {
+			display: none;
+
+			@include mMax {
+				display: block;
+			}
+		}
+	}
+}
