@@ -92,6 +92,17 @@ $(document).ready(function(){
 		}
 	});
 
+	// Header menu
+	$('.header__burger').click(function () {
+		$('.menu').addClass('open');
+		$('body').addClass('body-scroll-lock');
+	});
+
+	$('.menu__close').click(function () {
+		$('.menu').removeClass('open');
+		$('body').removeClass('body-scroll-lock');
+	});
+
 	// Anchors
 	anchorScroll($('.anchor'));
 
@@ -104,4 +115,12 @@ $(document).ready(function(){
 			}, 800);
 		});
 	}
+
+	// Adaptive table
+	$.each($('table tbody tr'), function () {
+		var title = $(this).parent('tbody').siblings('thead').find('th');
+		$.each($(this).find('td'), function (index) {
+			$(this).attr('aria-label', title.eq(index).text());
+		});
+	});
 });

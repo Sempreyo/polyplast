@@ -1,3 +1,25 @@
 .popup-thanks {
+	&__title {
+		font-size: 30px;
+		line-height: 35px;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 20px;
 
+		@include mMax {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+
+		@include mMax {
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
 }

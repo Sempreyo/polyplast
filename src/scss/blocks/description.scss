@@ -1,0 +1,75 @@
+.description {
+	padding: 69px 0 206px;
+	background-color: $gray-f3;
+
+	@include mMax {
+		padding: 50px 0;
+	}
+
+	&__title {
+		font-size: 43px;
+		line-height: 60px;
+		font-weight: 500;
+		letter-spacing: 0.03em;
+		margin-bottom: 43px;
+
+		@include mMax {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		line-height: 33px;
+		font-weight: 500;
+		letter-spacing: 0.03em;
+		color: $orange;
+		margin-bottom: 40px;
+
+		@include mMax {
+			font-size: 15px;
+			line-height: 23px;
+			margin-bottom: 16px;
+		}
+	}
+
+	&__text {
+		font-family: $secondFont;
+		font-size: 15px;
+		line-height: 23px;
+
+		@include mMax {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		p + p {
+			margin-top: 50px;
+
+			@include mMax {
+				margin-top: 35px;
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 68px;
+
+		@include tMax {
+			flex-direction: column;
+			margin-bottom: 35px;
+		}
+
+		.description__text {
+			width: 41%;
+
+			@include tMax {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -15,6 +15,12 @@
         <div class="header__left"><a class="header__logo" href=""><img src="img/logo.png" alt=""></a>
           <div class="header__burger"><span></span></div>
           <div class="menu">
+            <div class="menu__close">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+              </svg>
+            </div><a class="menu__logo" href=""><img src="img/logo.png" alt=""></a>
             <ul class="menu__list">
               <li><a href="#">Услуги и цены</a>
                 <div class="dropdown-menu">
@@ -45,6 +51,24 @@
                 </div>
               </li>
               <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="socials socials--row menu__socials">
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--email"></use>
+                  </svg></a></li>
             </ul>
           </div>
         </div>
@@ -220,7 +244,7 @@
     </main>
     <div class="popup-thanks" id="popup-thanks" style="display: none">
       <div class="popup-thanks__title">Ваша заявка получена!</div>
-      <div class="popup-thanks__text">Наш менеджер свяжется с Вами <br> в ближайшее время.</div>
+      <div class="popup-thanks__text">Наш менеджер свяжется с Вами в ближайшее время.</div>
     </div>
     <script src="js/main.js"></script>
   </body>

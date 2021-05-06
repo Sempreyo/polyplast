@@ -1,4 +1,10 @@
 /* Media queries */
+@mixin smMax {
+	@media (max-width: 500px) {
+		@content;
+	}
+}
+
 @mixin mMax {
 	@media (max-width: 767px) {
 		@content;

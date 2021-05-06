@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header__container">
+        <div class="header__left"><a class="header__logo" href=""><img src="img/logo.png" alt=""></a>
+          <div class="header__burger"><span></span></div>
+          <div class="menu">
+            <div class="menu__close">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+              </svg>
+            </div><a class="menu__logo" href=""><img src="img/logo.png" alt=""></a>
+            <ul class="menu__list">
+              <li><a href="#">Услуги и цены</a>
+                <div class="dropdown-menu">
+                  <div class="container dropdown-menu__container">
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Реклама</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Светодиодная продукция</a></li>
+                      <li><a href="#">Услуга</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                    <ul class="dropdown-menu__group">
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Услуга</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="socials socials--row menu__socials">
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a href="#">
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#socials--email"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__right"><a class="header__phone" href="tel:88005553607">8 800 555 36 07</a>
+          <ul class="socials socials--row header__socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="first-screen" style="background-image: url(&quot;img/first-screen.jpg&quot;)">
+        <div class="sidebar">
+          <ul class="socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="container first-screen__container">
+          <div class="first-screen__content">
+            <div class="first-screen__title">БЫСТРО ДЕЛАЕМ <br> РЕКЛАМУ И СУВЕНИРЫ</div>
+            <div class="first-screen__subtitle">В Иркутске и с доставкой <br> в другие города</div>
+            <form class="form js-form-validate" action="php/mail.php" method="post">
+              <label class="form__field field">
+                <input type="text" name="phone" placeholder="Телефон" required><span class="field__hint">Телефон</span>
+                <div class="field-error"></div>
+              </label>
+              <button class="button form__submit" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-text">
+        <div class="advantages-text__row">
+          <div class="advantages-text__item">
+            <div class="advantages-text__title">Цифры</div>
+            <div class="advantages-text__text">
+              Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж.</div>
+          </div>
+          <div class="advantages-text__item">
+            <div class="advantages-text__title">Гарантии</div>
+            <div class="advantages-text__text">
+              Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж.</div>
+          </div>
+          <div class="advantages-text__item">
+            <div class="advantages-text__title">Принципы</div>
+            <div class="advantages-text__text">
+              Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж.</div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__row">
+          <div class="portfolio__item portfolio__item--title">
+            <div class="portfolio__item-title">Примеры работ</div>
+          </div><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-1.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-2.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-3.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-4.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-5.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-6.jpg" alt=""></a><a class="portfolio__item" href="#" target="_blank"><img src="img/portfolio/item-7.jpg" alt=""></a>
+        </div>
+      </section>
+      <section class="price-list">
+        <div class="container">
+          <div class="price-list__title">Цены</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Наименование</th>
+                <th>Цены</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>456</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>789</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>456</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>789</td>
+              </tr>
+              <tr>
+                <td>Психологическая среда подсознательно</td>
+                <td>123</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="description__title">Как подготовить файл к печати</div>
+          <div class="description__subtitle">Как подготовить файл к печати</div>
+          <div class="description__row">
+            <div class="description__text">
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+            </div>
+            <div class="description__text">
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+            </div>
+          </div>
+          <div class="description__text">
+            <p>
+              Психологическая среда подсознательно синхронизирует социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.
+               Спонсорство позитивно притягивает SWOT-анализ.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contacts contacts--wide">
+        <div class="contacts__row">
+          <div class="contacts__map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCU4YHDfdC" allowfullscreen="true" style="position:relative;" frameborder="1"></iframe>
+          </div>
+          <div class="content contacts__content">
+            <div class="content__title">Контакты</div>
+            <div class="content__subtitle">Почему мы?</div>
+            <div class="content__text">
+              <p>
+                Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+              <p>
+                Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования. Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback feedback--padding">
+        <div class="container">
+          <div class="feedback__text">Есть идея? Помжем с <br> воплащением</div>
+          <form class="form form--dark feedback__form js-form-validate" action="php/mail.php" method="post">
+            <label class="form__field field">
+              <input type="text" name="phone" placeholder="Телефон" required><span class="field__hint">Телефон</span>
+              <div class="field-error"></div>
+            </label>
+            <button class="button form__submit feedback__submit" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="container footer__container"><a class="footer__logo" href=""><img src="img/logo.png" alt=""></a>
+          <ul class="footer__menu">
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="socials socials--row footer__socials">
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--insta"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--wa"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--email"></use>
+                </svg></a></li>
+            <li class="socials__item"><a href="#">
+                <svg>
+                  <use xlink:href="svg/sprite.svg#socials--viber"></use>
+                </svg></a></li>
+          </ul><a class="footer__phone" href="tel:88005553607">8 800 555 36 07</a>
+        </div>
+      </div>
+    </main>
+    <div class="popup-thanks" id="popup-thanks" style="display: none">
+      <div class="popup-thanks__title">Ваша заявка получена!</div>
+      <div class="popup-thanks__text">Наш менеджер свяжется с Вами в ближайшее время.</div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

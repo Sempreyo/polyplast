@@ -1,0 +1,122 @@
+.price-list {
+	padding: 69px 0 89px;
+
+	@include mMax {
+		padding: 40px 0;
+	}
+
+	&__title {
+		font-size: 43px;
+		line-height: 60px;
+		font-weight: 500;
+		letter-spacing: 0.03em;
+		margin-bottom: 52px;
+
+		@include mMax {
+			font-size: 34px;
+			line-height: 40px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		thead {
+			tr {
+				background-color: $mainColor;
+				color: $white;
+			}
+		}
+
+		tr {
+			@include tMax {
+				padding: 10px 0;
+				box-sizing: border-box;
+			}
+
+			+ tr {
+				@include tMax {
+					border-top: 1px solid $gray-f3;
+				}
+			}
+		}
+
+		th,
+		td {
+			font-family: $secondFont;
+			padding: 25px 50px;
+			border-bottom: 10px solid $white;
+
+			@include tMax {
+				padding: 8px 15px;
+			}
+		}
+
+		th {
+			font-size: 22px;
+			line-height: 33px;
+			font-weight: 400;
+			text-align: left;
+
+			@include tMax {
+				display: none;
+			}
+
+			&:last-child {
+				padding-left: 10px;
+			}
+		}
+
+		td {
+			font-size: 20px;
+			line-height: 30px;
+
+			@include tMax {
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: nowrap;
+				border-bottom: none;
+				font-size: 14px;
+				color: $white;
+				box-sizing: border-box;
+
+				&::before {
+					content: attr(aria-label);
+					display: inline-block;
+					max-width: 120px;
+					width: 100%;
+					margin-right: 10px;
+					color: $white;
+					word-break: break-word;
+				}
+			}
+
+			&:first-child {
+				width: 67%;
+				background-color: $gray-f3;
+				border-right: 20px solid $white;
+
+				@include tMax {
+					width: 100%;
+					background-color: $mainColor;
+					border-right: none;
+					padding-top: 20px;
+				}
+			}
+
+			&:last-child {
+				width: 33%;
+				background-color: $mainColor;
+				color: $white;
+
+				@include tMax {
+					width: 100%;
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+}

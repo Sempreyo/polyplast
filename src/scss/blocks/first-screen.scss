@@ -1,7 +1,7 @@
 .first-screen {
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	min-height: calc(100vh + 2px);
 	padding: 100px 0 100px 80px;
 	background-repeat: no-repeat;
 	background-position: center;

@@ -1,0 +1,37 @@
+extends templates/default
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+block main
+	include blocks/first-screen.pug
+	include blocks/advantages-text.pug
+	include blocks/portfolio.pug
+	include blocks/price-list.pug
+	include blocks/description.pug
+	section.contacts.contacts--wide
+		.contacts__row
+			.contacts__map
+				iframe(src='https://yandex.ru/map-widget/v1/-/CCU4YHDfdC' allowfullscreen='true' style='position:relative;' frameborder='1')
+			.content.contacts__content
+				.content__title Контакты
+				.content__subtitle Почему мы?
+				.content__text
+					p Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования.
+						|  Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.
+					p Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования.
+						|  Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.
+					p Психологическая среда подсознательно синхронизирует <br> социометрический процесс стратегического планирования.
+						|  Диверсификация бизнеса переворачивает связанный имидж. Спонсорство позитивно притягивает SWOT-анализ.
+	section.feedback.feedback--padding
+		.container
+			.feedback__text Есть идея? Помжем с <br> воплащением
+			form.form.form--dark.feedback__form.js-form-validate(action="php/mail.php", method="post")
+				label.form__field.field
+					input(type='text', name='phone', placeholder='Телефон', required)
+					span.field__hint Телефон
+					.field-error
+				+button('Перезвоните мне', 'form__submit feedback__submit')(type='submit')

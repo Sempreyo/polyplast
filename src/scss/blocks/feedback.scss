@@ -42,4 +42,12 @@
 			max-width: 100%;
 		}
 	}
+
+	&--padding {
+		padding-top: 105px;
+
+		@include tMax {
+			padding-top: 0;
+		}
+	}
 }
