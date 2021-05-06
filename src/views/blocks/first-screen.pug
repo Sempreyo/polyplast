@@ -1,4 +1,7 @@
-section.first-screen(style='background-image: url("img/first-screen.jpg")')
+section.first-screen
+	video(autoplay loop muted playsinline)
+		source(src='img/banner-video.webm' type='video/webm')
+		source(src='img/banner-video.mp4' type='video/mp4')
 	include sidebar.pug
 	.container.first-screen__container
 		.first-screen__content

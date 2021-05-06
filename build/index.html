@@ -95,7 +95,11 @@
       </div>
     </div>
     <main class="main">
-      <section class="first-screen" style="background-image: url(&quot;img/first-screen.jpg&quot;)">
+      <section class="first-screen">
+        <video autoplay loop muted playsinline>
+          <source src="img/banner-video.webm" type="video/webm">
+          <source src="img/banner-video.mp4" type="video/mp4">
+        </video>
         <div class="sidebar">
           <ul class="socials">
             <li class="socials__item"><a href="#">
@@ -133,7 +137,7 @@
       <section class="advantages">
         <div class="container advantages__container">
           <div class="advantages__row">
-            <div class="advantages__item advantages__item--purple">
+            <div class="advantages__item advantages__item--purple" data-aos="fade-down">
               <svg width="52" height="55">
                 <use xlink:href="svg/sprite.svg#advantage-1"></use>
               </svg>
@@ -142,7 +146,7 @@
                 <p>Выполненных заказов</p>
               </div>
             </div>
-            <div class="advantages__item advantages__item--orange">
+            <div class="advantages__item advantages__item--orange" data-aos="fade-down" data-aos-delay="300">
               <svg width="52" height="55">
                 <use xlink:href="svg/sprite.svg#advantage-2"></use>
               </svg>
@@ -151,7 +155,7 @@
                 <p>Выполненных заказов</p>
               </div>
             </div>
-            <div class="advantages__item advantages__item--blue">
+            <div class="advantages__item advantages__item--blue" data-aos="fade-down" data-aos-delay="600">
               <svg width="41" height="56">
                 <use xlink:href="svg/sprite.svg#advantage-3"></use>
               </svg>
@@ -205,7 +209,7 @@
       </section>
       <section class="feedback">
         <div class="container">
-          <div class="feedback__text">Есть идея? Помжем с <br> воплащением</div>
+          <div class="feedback__text">Есть идея? Поможем с <br> воплощением</div>
           <form class="form form--dark feedback__form js-form-validate" action="php/mail.php" method="post">
             <label class="form__field field">
               <input type="text" name="phone" placeholder="Телефон" required><span class="field__hint">Телефон</span>

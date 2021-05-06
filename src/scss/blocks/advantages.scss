@@ -1,21 +1,43 @@
 .advantages {
-	@include tMax {
-		display: none;
-	}
-
 	&__container {
 		max-width: 1575px;
 		padding: 95px 15px;
+
+		@include tMax {
+			padding: 60px 15px 0;
+		}
+
+		@include mMax {
+			padding: 60px 15px;
+		}
 	}
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
+
+		@include tMax {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__item {
 		display: flex;
 		align-items: center;
+
+		+ .advantages__item {
+			@include tMax {
+				margin-top: 30px;
+			}
+		}
+
+		svg {
+			@include tMax {
+				width: 10%;
+				height: 10%;
+			}
+		}
 
 		&--purple {
 			svg {
@@ -51,6 +73,10 @@
 	&__item-text {
 		margin-left: 37px;
 
+		@include tMax {
+			margin-left: 22px;
+		}
+
 		p {
 			font-weight: 500;
 			letter-spacing: 0.03em;
@@ -58,11 +84,21 @@
 			&:first-child {
 				font-size: 43px;
 				line-height: 55px;
+
+				@include tMax {
+					font-size: 35px;
+					line-height: 38px;
+				}
 			}
 
 			&:last-child {
 				font-size: 24px;
 				line-height: 33px;
+
+				@include tMax {
+					font-size: 20px;
+					line-height: 25px;
+				}
 			}
 		}
 	}
