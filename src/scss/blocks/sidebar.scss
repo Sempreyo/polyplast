@@ -16,7 +16,7 @@
 		display: none;
 	}
 
-	@media (max-height: 500px) {
-		min-height: 120vh;
+	@media (max-height: 500px) and (orientation: landscape) {
+		min-height: calc(120vh + 4px);
 	}
 }
