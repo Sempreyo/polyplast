@@ -8,6 +8,11 @@
 	&__item {
 		width: 33.3333%;
 		padding: 58px 137px;
+		box-sizing: border-box;
+
+		@media (max-width: 1919px) {
+			padding: 58px 40px;
+		}
 
 		@include tMax {
 			width: 100%;
